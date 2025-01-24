@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:restaurant_app/firebase_options.dart';
 import 'package:restaurant_app/models/restaurant.dart';
+import 'package:restaurant_app/pages/mesas_page.dart';
 import 'package:restaurant_app/services/auth/auth_gate.dart';
 import 'package:restaurant_app/themes/theme_provider.dart';
 
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: const AuthGate(),
+      home: GestionMesasScreen(),
       theme: Provider.of<ThemeProvider>(context).themeData,
     );
   }

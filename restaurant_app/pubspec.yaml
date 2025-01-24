@@ -42,6 +42,9 @@ dependencies:
   firebase_core: ^3.9.0
   firebase_auth: ^5.3.4
   cloud_firestore: ^5.6.0
+  sqflite: ^2.0.0+4  # SQLite package
+  path_provider: ^2.0.3  # Para encontrar la ruta de la base de datos en el dispositivo
+
 
 dev_dependencies:
   flutter_test:
